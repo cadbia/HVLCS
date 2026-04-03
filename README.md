@@ -6,27 +6,37 @@ C++ implementation of the Highest Value Longest Common Subsequence problem.
 
 ## Build Instructions
 
-```bash
-cd build
-cmake ..
-make
-```
-
-Or compile directly:
+Compile with C++17:
 
 ```bash
-g++ -std=c++17 -o hvlcs src/main.cpp src/hvlcs.cpp
+g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o hvlcs src/main.cpp src/hvlcs.cpp
 ```
 
 ## Run Instructions
 
+Run the program on the example:
+
 ```bash
-./hvlcs <input_file>
+./hvlcs data/example.in
 ```
 
-The program reads an input file and outputs:
-- First line: maximum value (integer)
-- Second line: one optimal subsequence
+Expected output:
+
+```
+8
+ACD
+```
+
+## Verify Output
+
+To verify the output against the expected result:
+
+```bash
+./hvlcs data/example.in > output.txt
+diff output.txt data/example.out
+```
+
+If no output is printed by `diff`, the output matches exactly.
 
 ## Input Format
 
@@ -49,9 +59,12 @@ Where:
 
 ### Q1
 
+TODO: Add question 1 here
 
 ### Q2
 
+TODO: Add question 2 here
 
 ### Q3
 
+TODO: Add question 3 here
