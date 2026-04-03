@@ -4,15 +4,14 @@
 #include <string>
 #include "hvlcs.h"
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
 	if (argc != 2) {
 		std::cerr << "Usage: " << argv[0] << " <input_file>" << std::endl;
 		return 1;
 	}
 
 	std::ifstream infile(argv[1]);
-	if (!infile.is_open()){
+	if (!infile.is_open()) {
 		std::cerr << "Error: Could not open file " << argv[1] << std::endl;
 		return 1;
 	}

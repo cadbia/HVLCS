@@ -4,8 +4,7 @@
 #include <string>
 #include <unordered_map>
 
-struct HVLCSResult
-{
+struct HVLCSResult {
 	long long bestValue;
 	std::string subseq;
 };

@@ -1,25 +1,10 @@
-# Build artifacts
-build/
 *.o
-*.a
-*.so
-*.dylib
-*.exe
 *.out
+hvlcs
+test_small
 
-# IDE
 .vscode/
 .idea/
 *.swp
-*.swo
 *~
 .DS_Store
-
-# CMake
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-
-# Executables
-hvlcs
