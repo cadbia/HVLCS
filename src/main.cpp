@@ -2,7 +2,10 @@
 #include <fstream>
 #include <unordered_map>
 #include <string>
+#include <chrono>
 #include "hvlcs.h"
+
+using namespace std::chrono;
 
 int main(int argc, char* argv[]) {
 	if (argc != 2) {
@@ -33,9 +36,15 @@ int main(int argc, char* argv[]) {
 	infile.close();
 
 	HVLCSResult result = compute_hvlcs(A, B, val);
-
 	std::cout << result.bestValue << std::endl;
 	std::cout << result.subseq << std::endl;
-
+	
+	auto start = high_resolution_clock::now();
+	for (int i = 0; i < 100000; i++) {
+		compute_hvlcs(A, B, val);
+	}
+	auto stop = high_resolution_clock::now();
+	auto duration = duration_cast<microseconds>(stop - start);
+	std::cout << "Algorithm time: " << duration.count() / 1000 << " miseconds" << std::endl;
 	return 0;
 }
