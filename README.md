@@ -3,7 +3,12 @@
 ## Project Overview
 
 C++ implementation of the Highest Value Longest Common Subsequence problem.
-
+```
+Caden Bialow
+- UFID 86822533
+Jake Qiu
+- UFID 41352615
+```
 ## Build Instructions
 
 Compile with C++17:
