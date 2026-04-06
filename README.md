@@ -59,7 +59,7 @@ Where:
 
 ### Q1
 
-TODO: Add question 1 here
+![Example Image](../HVLCS/images/HVLCS_Algorithm_Runtime_Graph.png)
 
 ### Q2
 
