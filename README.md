@@ -59,7 +59,7 @@ Where:
 
 ### Q1
 
-![Example Image](../HVLCS/images/HVLCS_Algorithm_Runtime_Graph.png)
+![Example Image](/images/HVLCS_Algorithm_Runtime_Graph.png)
 
 ### Q2
 
